@@ -1,0 +1,71 @@
+.shadow-container {
+	width:400px;
+	height:400px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50%;
+	left: 50%;
+	margin-left:-200px;
+	position: absolute;
+	display: none;
+	
+}
+
+.shape-container {
+	
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	-webkit-transform-style: preserve-3d;
+}
+
+.shape {
+	margin: 0 auto;
+	width: 1px;
+	height: 1px;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	box-shadow:20px 0 20px rgba(0,0,0,0.8);
+}
+
+#container {
+	margin: 0;
+	display: table;
+	-webkit-perspective: 800;
+	-webkit-perspective-origin: 50%;
+}
+
+.spike .f,
+.spike .b,
+.spike .l,
+.spike .r {
+	width: 60px;
+	height: 200px;
+	position: absolute;
+	-webkit-transform-origin: 30px 200px;
+	background-repeat: no-repeat;
+	-webkit-backface-visibility: hidden;
+}
+
+.spike {
+	position: absolute;
+	border: none;
+	width: 60px;
+	height: 200px;
+	-webkit-transform-style: preserve-3d;
+}
+
+.spike-ring {
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+}
+
+.spike-inner {
+	position: absolute;
+	left: -30px;
+	top: -200px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 30px 200px;
+}

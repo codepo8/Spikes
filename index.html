@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Spikes | CSS 3D Shape</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/spikeball.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="menu">
+			<div id="menu-inner">
+				<h1>Spikes</h1>
+				<p>
+					Some days you've just got to do something daft.
+					Today is one of those days. CSS wasn't
+					supposed to do this (square peg, round hole), but hey apparently it can
+					made to do it if you really want to :)
+				</p>
+				<p>That's right, this is CSS 3D, not WebGL or Canvas,
+				so see if you can figure out how I did it with lighting
+				and irregular shapes. Then check out the source code if you like.</p>
+				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+				
+			</div>
+		</div>
+		<div id="container">
+			
+			<a href="http://aerotwist.com" title="Back to Aerotwist"><span>&larr;</span>Back to Aerotwist</a>
+			
+			<div class="shape-container">
+				<div class="shape">
+				</div>
+				<div class="shadow-container"></div>
+				<div class="shadow-container" data-scale="1.3"></div>
+			</div>
+			
+		</div>
+		
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="js/Modernizr.js"></script>
+	<script src="js/RequestAnimationFrame.js"></script>
+	<script src="js/CSS3Spikes.js"></script>
+</html>
