@@ -16,29 +16,48 @@
 					supposed to do this (square peg, round hole), but hey apparently it can
 					made to do it if you really want to :)
 				</p>
-				<p>That's right, this is CSS 3D, not WebGL or Canvas,
+				<p>That's right, this is <strong>CSS 3D, not WebGL or Canvas</strong>,
 				so see if you can figure out how I did it with lighting
 				and irregular shapes. Then check out the source code if you like.</p>
 				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-				
+
+				<p><strong>Update:</strong>I thought it'd be fun to
+				allow the light source to move.</p>
+				<p class="gui-set"><a href="javascript:AEROTWIST.Spikes.toggleLightMovement()">Toggle light movement</a></p>
 			</div>
 		</div>
 		<div id="container">
-			
+
 			<a href="http://aerotwist.com" title="Back to Aerotwist"><span>&larr;</span>Back to Aerotwist</a>
-			
+
 			<div class="shape-container">
 				<div class="shape">
 				</div>
 				<div class="shadow-container"></div>
 				<div class="shadow-container" data-scale="1.3"></div>
 			</div>
-			
+
 		</div>
-		
+
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script src="js/Modernizr.js"></script>
 	<script src="js/RequestAnimationFrame.js"></script>
 	<script src="js/CSS3Spikes.js"></script>
+
+	<!-- Analytics -->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-13024693-3']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
 </html>

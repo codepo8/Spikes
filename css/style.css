@@ -89,7 +89,22 @@ p {
 }
 
 a {
-	color: #FFF;
+	color: #000;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #444;
+
+  -webkit-transition: color 1.3s ease-out;
+     -moz-transition: color 1.3s ease-out;
+      -ms-transition: color 1.3s ease-out;
+       -o-transition: color 1.3s ease-out;
+          transition: color 1.3s ease-out;
+
+}
+
+strong {
 	font-weight: bold;
 }
 
@@ -144,7 +159,7 @@ h2 {
 	-moz-transition: all 0.2s ease-out;  /* FF4+ */
        -o-transition: all 0.2s ease-out;  /* Opera 10.5+ */
   -webkit-transition: all 0.2s ease-out;  /* Saf3.2+, Chrome */
-          transition: all 0.2s ease-out; 
+          transition: all 0.2s ease-out;
 }
 
 #container span {
@@ -158,7 +173,7 @@ h2 {
 	-moz-transition: all 0.2s ease-out;  /* FF4+ */
        -o-transition: all 0.2s ease-out;  /* Opera 10.5+ */
   -webkit-transition: all 0.2s ease-out;  /* Saf3.2+, Chrome */
-          transition: all 0.2s ease-out; 
+          transition: all 0.2s ease-out;
 	width: 160px;
 	background-color: #CCC;
 	color: #000;
