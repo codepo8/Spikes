@@ -3,6 +3,8 @@
 	height:400px;
 	-webkit-transform-style: preserve-3d;
 	-webkit-transform-origin: 50% 50%;
+	-moz-transform-style: preserve-3d;
+	-moz-transform-origin: 50% 50%;
 	left: 50%;
 	margin-left:-200px;
 	position: absolute;
@@ -19,6 +21,8 @@
 	vertical-align: middle;
 	text-align: center;
 	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-moz-transform: translateX(300px);
 }
 
 .shape {
@@ -27,6 +31,7 @@
 	height: 1px;
 	position: relative;
 	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
 	box-shadow:20px 0 20px rgba(0,0,0,0.8);
 }
 
@@ -35,6 +40,8 @@
 	display: table;
 	-webkit-perspective: 800;
 	-webkit-perspective-origin: 50%;
+	-moz-perspective: 800;
+	-moz-perspective-origin: 50%;
 }
 
 .spike .f,
@@ -45,8 +52,10 @@
 	height: 200px;
 	position: absolute;
 	-webkit-transform-origin: 30px 200px;
+	-moz-transform-origin: 30px 200px;
 	background-repeat: no-repeat;
 	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
 }
 
 .spike {
@@ -55,11 +64,13 @@
 	width: 60px;
 	height: 200px;
 	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
 }
 
 .spike-ring {
 	position: absolute;
 	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
 }
 
 .spike-inner {
@@ -68,4 +79,6 @@
 	top: -200px;
 	-webkit-transform-style: preserve-3d;
 	-webkit-transform-origin: 30px 200px;
+	-moz-transform-style: preserve-3d;
+	-moz-transform-origin: 30px 200px;
 }
