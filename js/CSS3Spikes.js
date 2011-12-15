@@ -182,7 +182,8 @@ AEROTWIST.Spikes = new function()
 
 		// now rotate our shape
 		$shape.css({
-			WebkitTransform: "translateY(-55px) scale(0.7) rotateX("+(baseVec.x)+"deg) rotateY("+(baseVec.y)+"deg)"
+			WebkitTransform: "translateY(-55px) scale(0.7) rotateX("+(baseVec.x)+"deg) rotateY("+(baseVec.y)+"deg)",
+			MozTransform: "translateY(-55px) scale(0.7) rotateX("+(baseVec.x)+"deg) rotateY("+(baseVec.y)+"deg)"
 		});
 
 		// work out the shadow darkness
@@ -195,7 +196,9 @@ AEROTWIST.Spikes = new function()
 
 			thisShadow.css({
 				WebkitTransform: "translateZ(-150px) translateY(75px) rotateX(90deg) scale("+((.9-(shadowDarkness *.7)) * shadScale)+")",
-				background: "-webkit-gradient(radial, 50% 50%, 0, 50% 50%, 200, from(rgba(30,4,22,"+shadowDarkness+")), to(rgba(60,9,44,0)))"
+				MozTransform: "translateZ(-150px) translateY(75px) rotateX(90deg) scale("+((.9-(shadowDarkness *.7)) * shadScale)+")",
+				background: "-webkit-gradient(radial, 50% 50%, 0, 50% 50%, 200, from(rgba(30,4,22,"+shadowDarkness+")), to(rgba(60,9,44,0)))",
+				background: "-moz-gradient(radial, 50% 50%, 0, 50% 50%, 200, from(rgba(30,4,22,"+shadowDarkness+")), to(rgba(60,9,44,0)))"
 			});
 		}
 
@@ -269,12 +272,14 @@ AEROTWIST.Spikes = new function()
 
 			// transform the inner piece
 			$spike.find('.spike-inner').css({
-				WebkitTransform: "rotateZ("+z+"deg) scaleY(" + scale + ")"
+				WebkitTransform: "rotateZ("+z+"deg) scaleY(" + scale + ")",
+				MozTransform: "rotateZ("+z+"deg) scaleY(" + scale + ")"
 			});
 
 			// and the outer
 			$spike.css({
-				WebkitTransform: "translateY(" + Math.round(Math.cos(zRads) * -radius)+"px) translateX("+Math.round(Math.sin(zRads) * radius)+"px)"
+				WebkitTransform: "translateY(" + Math.round(Math.cos(zRads) * -radius)+"px) translateX("+Math.round(Math.sin(zRads) * radius)+"px)",
+				MozTransform: "translateY(" + Math.round(Math.cos(zRads) * -radius)+"px) translateX("+Math.round(Math.sin(zRads) * radius)+"px)"
 			});
 		}
 
@@ -319,7 +324,8 @@ AEROTWIST.Spikes = new function()
 			if($face.hasClass('f')) {
 
 				$face.css({
-					WebkitTransform: "translateZ(29.7px) rotateX(8.6deg) rotateY(0deg)"
+					WebkitTransform: "translateZ(29.7px) rotateX(8.6deg) rotateY(0deg)",
+					MozTransform: "translateZ(29.7px) rotateX(8.6deg) rotateY(0deg)"
 				});
 
 				faceNormal.rotate(fAngle,0,0);
@@ -329,7 +335,8 @@ AEROTWIST.Spikes = new function()
 			if($face.hasClass('b')) {
 
 				$face.css({
-					WebkitTransform: "translateZ(-29.7px) rotateX(-8.6deg) rotateY(180deg)"
+					WebkitTransform: "translateZ(-29.7px) rotateX(-8.6deg) rotateY(180deg)",
+					MozTransform: "translateZ(-29.7px) rotateX(-8.6deg) rotateY(180deg)"
 				});
 
 				faceNormal.rotate(-fAngle,180,0);
@@ -339,7 +346,8 @@ AEROTWIST.Spikes = new function()
 			if($face.hasClass('l')) {
 
 				$face.css({
-					WebkitTransform: "translateX(-29.7px) rotateY(-90deg) rotateX(8.6deg)"
+					WebkitTransform: "translateX(-29.7px) rotateY(-90deg) rotateX(8.6deg)",
+					MozTransform: "translateX(-29.7px) rotateY(-90deg) rotateX(8.6deg)"
 				});
 
 				faceNormal.rotate(fAngle,-90,0);
@@ -348,7 +356,8 @@ AEROTWIST.Spikes = new function()
 			// - Right
 			if($face.hasClass('r')) {
 				$face.css({
-					WebkitTransform: "translateX(29.7px) rotateY(90deg) rotateX(8.6deg)"
+					WebkitTransform: "translateX(29.7px) rotateY(90deg) rotateX(8.6deg)",
+					MozTransform: "translateX(29.7px) rotateY(90deg) rotateX(8.6deg)"
 				});
 
 				faceNormal.rotate(fAngle,90,0);
