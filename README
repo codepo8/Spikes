@@ -1,7 +1,7 @@
 Spikes
 ------
 
-Rather than doing something sensible like using WebGL or Canvas, umm, or anything that would be sensible I decided that the best thing to do was to push what could (or should) be done with CSS 3D transforms.
+Rather than doing something sensible like using WebGL or Canvas, umm, or anything that would actually make sense I decided that the best thing to do was to push what could (or should) be done with CSS 3D transforms.
 
 Additional Credits:
  - Paul Irish rAF shim and Modernizr.
